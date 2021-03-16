@@ -1,3 +1,4 @@
+const TOTAL_ELEMENTS = 119;
 const elements = [
     {
         "name": "Hydrogen",
