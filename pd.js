@@ -37,22 +37,22 @@ function getColorForCategory(category) {
 
 function drawOneElement(ctx, elm) {
     ctx.fillStyle = getColorForCategory(elm.category);
-    var x = (elm.xpos - 1) * (ELM_RECT_SIZE + ELM_SPACER);
-    var y = (elm.ypos - 1) * (ELM_RECT_SIZE + ELM_SPACER);
+    var x = (elm.row - 1) * (ELM_RECT_SIZE + ELM_SPACER);
+    var y = (elm.col - 1) * (ELM_RECT_SIZE + ELM_SPACER);
     ctx.fillRect(x, y, ELM_RECT_SIZE, ELM_RECT_SIZE);
     ctx.fillStyle = "#000000";
-    ctx.font = '12px serif';
+    ctx.font = '12px Arial';
     y = y + 12;
     ctx.fillText(elm.number, x + 2, y);
-    ctx.font = 'bold 20px serif';
+    ctx.font = 'bold 20px Arial';
     var w = ctx.measureText(elm.symbol).width;
     y = y + 17;
     ctx.fillText(elm.symbol, x + ELM_RECT_SIZE / 2 - w / 2, y);
-    ctx.font = '9px serif';
+    ctx.font = '9px Arial';
     var w = ctx.measureText(elm.name).width;
     y = y + 12;
     ctx.fillText(elm.name, x + ELM_RECT_SIZE / 2 - w / 2, y);
-    ctx.font = '9px serif';
+    ctx.font = '9px Arial';
     var w = ctx.measureText(elm.atomic_mass).width;
     y = y + 12;
     ctx.fillText(elm.atomic_mass, x + ELM_RECT_SIZE / 2 - w / 2, y);
