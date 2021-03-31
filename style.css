@@ -1,0 +1,40 @@
+body {
+    background-color:lightcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    background-color: lightgrey;
+}
+h2 {
+    text-align: center;
+}
+.navigation {
+    background-color: blue;
+}
+.fakeButton {
+    margin: auto;
+    margin-bottom: 20px;
+    border: 2px black solid;
+    background-color: rgb(68, 89, 184);
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+    font-size: xx-large;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#divQuestionNumber {
+    font-size: large;
+    font-weight: bold;
+    margin: 20px;
+}
+#divQuestion {
+    font-size: large;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}

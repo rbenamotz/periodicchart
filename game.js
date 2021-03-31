@@ -1,4 +1,4 @@
-const TOTAL_QUESTIONS = 2;
+const TOTAL_QUESTIONS = 10;
 var currentQuestion = 0;
 var correctAnswer = "";
 var score = 0;
